@@ -1,0 +1,19 @@
+# env & secrets — NEVER commit real env files, only examples/*.example
+.env
+.env.*
+!.env.example
+*.bak
+*.bak-*
+
+# dependencies & builds
+node_modules/
+.next/
+dist/
+
+# local state (lives outside the shell by design)
+*.db
+*.db-*
+data/
+
+# OS noise
+.DS_Store
